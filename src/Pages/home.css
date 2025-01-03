@@ -1,0 +1,647 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@font-face {
+  font-family: "Inter";
+  src: url("https://fonts.google.com/specimen/Rubik");
+}
+
+body {
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Rubik", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+:root {
+  --dark-navy: #313e51;
+  --purple: #a729f5;
+  --navy: #3b4d66;
+  --grey-navy: #626c7f;
+  --light-bluish: #abc1e1;
+  --ligh-grey: #f4f6fa;
+  --pure-white: #ffffff;
+  --green: #26d782;
+  --red: #ee5454;
+}
+
+/* For devices with a maximum width of 600px (Mobile Phones) */
+@media only screen and (max-width: 600px) {
+  .pageContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-navy);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--pure-white);
+  }
+
+  .backGroundContainer {
+    width: 100vw;
+    height: 100vh;
+    /* z-index: -1; */
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .firstCurve {
+    box-sizing: border-box;
+    position: fixed;
+    width: 60rem;
+    height: 60rem;
+    border: 144px solid #2d3949;
+    border-radius: 50%;
+    left: -36.7rem;
+  }
+
+  .secondCurve {
+    display: none;
+  }
+
+  .mainContentContainer {
+    z-index: 2;
+    overflow-y: scroll;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    width: 80%;
+    z-index: 2;
+  }
+
+  .textIntroduction {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .introTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .introText {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 100%;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .introTextSecondLine {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    color: #ffffff;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .instructionText {
+    font-family: "Rubik";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #abc1e1;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .optionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 100%;
+  }
+
+  .optionBox {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 16px;
+    background: #3b4d66;
+    box-shadow: 0px 16px 40px rgba(49, 62, 81, 0.14);
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .optionBox:focus {
+    background-color: #a729f5;
+  }
+
+  .optionBoxText {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #ffffff;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    text-wrap: wrap;
+  }
+
+  .htmlIcon {
+    background-color: rgba(255, 241, 233);
+    width: 40px;
+    height: 40px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 12px;
+  }
+
+  .cssIcon {
+    background-color: #e0fdef;
+    width: 40px;
+    height: 40px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 12px;
+  }
+
+  .jsIcon {
+    background-color: #ebf0ff;
+    width: 40px;
+    height: 40px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 12px;
+  }
+
+  .accessibilityIcon {
+    background-color: #f6e7ff;
+    width: 40px;
+    height: 40px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 12px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/* For devices with a minimum width of 601px and a maximum width of 1024px (Tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+  .pageContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-navy);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--pure-white);
+  }
+
+  .backGroundContainer {
+    width: 100vw;
+    height: 100vh;
+    /* z-index: -1; */
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .firstCurve {
+    box-sizing: border-box;
+    position: fixed;
+    width: 60rem;
+    height: 60rem;
+    left: -30rem;
+    top: -35rem;
+    border: 144px solid #2d3949;
+    border-radius: 50%;
+  }
+
+  .secondCurve {
+    display: none;
+  }
+
+  .mainContentContainer {
+    z-index: 2;
+    overflow-y: scroll;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+  }
+
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 64px;
+    width: 80%;
+    z-index: 2;
+  }
+
+  .textIntroduction {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .introTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .introText {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 100%;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .introTextSecondLine {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 100%;
+    color: #ffffff;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .instructionText {
+    font-family: "Rubik";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #abc1e1;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .optionsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+    height: 100%;
+  }
+
+  .optionBox {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 32px;
+    background: #3b4d66;
+    box-shadow: 0px 16px 40px rgba(49, 62, 81, 0.14);
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .optionBox:hover {
+    border: #a729f5;
+  }
+
+  .optionBox:focus {
+    background-color: #a729f5;
+  }
+
+  .optionBoxText {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    color: #ffffff;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    text-wrap: wrap;
+  }
+
+  .htmlIcon {
+    background-color: rgba(255, 241, 233);
+    width: 56px;
+    height: 56px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 12px;
+  }
+
+  .cssIcon {
+    background-color: #e0fdef;
+    width: 56px;
+    height: 56px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 12px;
+  }
+
+  .jsIcon {
+    background-color: #ebf0ff;
+    width: 56px;
+    height: 56px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 12px;
+  }
+
+  .accessibilityIcon {
+    background-color: #f6e7ff;
+    width: 56px;
+    height: 56px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 12px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/* For devices with a minimum width of 1025px (Laptops) */
+@media only screen and (min-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
+
+  .pageContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-navy);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .backGroundContainer {
+    width: 100vw;
+    height: 100vh;
+    /* z-index: -1; */
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .firstCurve {
+    box-sizing: border-box;
+    position: fixed;
+    width: 60rem;
+    height: 60rem;
+    left: -30rem;
+    top: -35rem;
+    border: 144px solid #2d3949;
+    border-radius: 50%;
+  }
+
+  .secondCurve {
+    box-sizing: border-box;
+    position: fixed;
+    width: 60rem;
+    height: 60rem;
+    right: -30rem;
+    bottom: -35rem;
+    border-radius: 50%;
+    border: 144px solid #2d3949;
+    overflow: hidden;
+  }
+
+  .mainContentContainer {
+    z-index: 2;
+    overflow-y: scroll;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .mainContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: auto;
+    width: 80%;
+    /* z-index: 2; */
+  }
+
+  .textIntroduction {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .introTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .introText {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 100%;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .introTextSecondLine {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 100%;
+    color: #ffffff;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .instructionText {
+    font-family: "Rubik";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #abc1e1;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .optionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 100%;
+  }
+
+  .optionBox {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 32px;
+    width: 35rem;
+    background: #3b4d66;
+    box-shadow: 0px 16px 40px rgba(49, 62, 81, 0.14);
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .optionBox:hover {
+    opacity: 0.85;
+    cursor: pointer;
+  }
+
+  .accessibility:hover {
+    border: solid 0.1px #a729f5;
+  }
+
+  .javascript:hover {
+    border: solid 0.1px blue;
+  }
+
+  .css:hover {
+    border: solid 0.1px var(--green);
+  }
+
+  .html:hover {
+    border: solid 0.1px var(--red);
+  }
+
+  .htmlIcon {
+    background-color: rgba(255, 241, 233);
+    width: 56px;
+    height: 56px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 12px;
+  }
+
+  .optionBoxText {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    color: #ffffff;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    text-wrap: wrap;
+  }
+
+  .cssIcon {
+    background-color: #e0fdef;
+    width: 56px;
+    height: 56px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 12px;
+  }
+
+  .jsIcon {
+    background-color: #ebf0ff;
+    width: 56px;
+    height: 56px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 12px;
+  }
+
+  .accessibilityIcon {
+    background-color: #f6e7ff;
+    width: 56px;
+    height: 56px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 12px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

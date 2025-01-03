@@ -1,0 +1,177 @@
+/* For screens larger than 1024 pixels */
+@media (min-width: 1025px) {
+    .scoreDisplayContainer {
+box-sizing: border-box;
+width: 35rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 48px;
+gap: 40px;
+background: #3B4D66;
+box-shadow: 0px 16px 40px rgba(49, 62, 81, 0.14);
+border-radius: 24px;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+    }
+
+    .scoreDisplayTitleContainer {
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 48px;
+gap: 40px;
+background: #3B4D66;
+box-shadow: 0px 16px 40px rgba(49, 62, 81, 0.14);
+border-radius: 24px;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+    }
+
+    .scoreTextContainer {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 16px;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+    }
+
+    .scoreText {
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 144px;
+line-height: 100%;
+color: #FFFFFF;
+flex: none;
+order: 0;
+flex-grow: 0;
+    }
+}
+
+/* For screens between 768 and 1024 pixels */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .scoreDisplayContainer {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 48px;
+        gap: 40px;
+        background: #3B4D66;
+        box-shadow: 0px 16px 40px rgba(49, 62, 81, 0.14);
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+            }
+        
+            .scoreDisplayTitleContainer {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 48px;
+        gap: 40px;
+        background: #3B4D66;
+        box-shadow: 0px 16px 40px rgba(49, 62, 81, 0.14);
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+            }
+        
+            .scoreTextContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+            }
+        
+            .scoreText {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 144px;
+        line-height: 100%;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+            }
+}
+
+/* For screens smaller than 768 pixels */
+@media (max-width: 767px) {
+    .scoreDisplayContainer {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 48px;
+        gap: 40px;
+        background: #3B4D66;
+        box-shadow: 0px 16px 40px rgba(49, 62, 81, 0.14);
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+            }
+        
+            .scoreDisplayTitleContainer {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 48px;
+        gap: 40px;
+        background: #3B4D66;
+        box-shadow: 0px 16px 40px rgba(49, 62, 81, 0.14);
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+            }
+        
+            .scoreTextContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+            }
+        
+            .scoreText {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 144px;
+        line-height: 100%;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+            }
+}
