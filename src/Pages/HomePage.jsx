@@ -52,6 +52,9 @@ const HomePage = (props) => {
                             </div>
                         </Link>
                     </div>
+                    <div className="creditContainer">
+                        <h3>Built by David Abhulimen.</h3>
+                    </div>
                 </div>
             </div>
         </div>
