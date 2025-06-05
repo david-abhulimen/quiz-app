@@ -17,6 +17,7 @@ const HomePage = (props) => {
                             <h1 className="introTextSecondLine">Frontend Quiz!</h1>
                         </div>
                         <p className="instructionText"><i>Pick a subject to get started.</i></p>
+                        <p className="instructionText">Built by David Abhulimen</p>
                     </div>
                     <div className="optionsContainer">
                         <Link to="/quizpage" state={{ topic: "HTML" }} >
@@ -51,9 +52,6 @@ const HomePage = (props) => {
                                 <p className="optionBoxText">Accessibility</p>
                             </div>
                         </Link>
-                    </div>
-                    <div className="creditContainer">
-                        <h3>Built by David Abhulimen.</h3>
                     </div>
                 </div>
             </div>
